@@ -42,6 +42,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -115,7 +116,8 @@ fun AddItemScreen(
         if (isGranted) {
             cameraLauncher.launch(null)
         } else {
-            Toast.makeText(context, "Camera permission denied", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,
+                context.getString(R.string.camera_permission_denied), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -125,10 +127,10 @@ fun AddItemScreen(
         AlertDialog(
             onDismissRequest = { showDialog.value = false },
 
-            title = { Text(text = "Select image source") },
+            title = { Text(text = stringResource(R.string.select_image_source)) },
 
             text = {
-                Text(text = "Choose the source for the image")
+                Text(text = stringResource(R.string.choose_the_source_for_the_image))
             },
             confirmButton = {
                 Button(onClick = {
@@ -141,7 +143,7 @@ fun AddItemScreen(
                         requestPermissionLauncher.launch(cameraPermission)
                     }
                 }) {
-                    Text(text = "Camera")
+                    Text(text = stringResource(R.string.camera))
                 }
             },
             dismissButton = {
@@ -149,7 +151,7 @@ fun AddItemScreen(
                     showDialog.value = false
                     galleryLauncher.launch("image/*")
                 }) {
-                    Text(text = "Gallery")
+                    Text(text = stringResource(R.string.gallery))
                 }
             },
         )
@@ -178,7 +180,9 @@ fun AddItemScreen(
                 )
             }
             Text(
-                text = if (items == null) "Add museum item" else "Edit museum item",
+                text = if (items == null) stringResource(R.string.add_museum_item) else stringResource(
+                    R.string.edit_museum_item
+                ),
                 modifier = Modifier.padding(16.dp),
                 color = Color.Black,
                 style = MaterialTheme.typography.titleLarge,
@@ -188,7 +192,7 @@ fun AddItemScreen(
         }
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Item image",
+            text = stringResource(R.string.item_image),
             modifier = Modifier
                 .align(Alignment.Start)
                 .padding(start = 16.dp),
@@ -200,7 +204,7 @@ fun AddItemScreen(
             else painterResource(
                 id = R.drawable.not_loaded_img
             ),
-            contentDescription = "Item 1",
+            contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(bottom = 16.dp, start = 16.dp, end = 16.dp, top = 8.dp)
@@ -212,7 +216,7 @@ fun AddItemScreen(
             alignment = Alignment.Center,
         )
         Text(
-            text = "Item name",
+            text = stringResource(R.string.item_name),
             modifier = Modifier
                 .align(Alignment.Start)
                 .padding(start = 16.dp),
@@ -226,7 +230,7 @@ fun AddItemScreen(
                 .padding(horizontal = 16.dp),
             singleLine = true,
             maxLines = 1,
-            placeholder = { Text(text = "Name") },
+            placeholder = { Text(text = stringResource(R.string.item_name)) },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
                 capitalization = KeyboardCapitalization.Sentences
@@ -234,7 +238,7 @@ fun AddItemScreen(
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Item description",
+            text = stringResource(R.string.item_description),
             modifier = Modifier
                 .align(Alignment.Start)
                 .padding(start = 16.dp),
@@ -246,7 +250,7 @@ fun AddItemScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp),
-            placeholder = { Text(text = "Description") },
+            placeholder = { Text(text = stringResource(R.string.description)) },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
                 capitalization = KeyboardCapitalization.Sentences
@@ -254,7 +258,7 @@ fun AddItemScreen(
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Item price",
+            text = stringResource(R.string.item_price),
             modifier = Modifier
                 .align(Alignment.Start)
                 .padding(start = 16.dp),
@@ -268,14 +272,14 @@ fun AddItemScreen(
                 .padding(horizontal = 16.dp),
             singleLine = true,
             maxLines = 1,
-            placeholder = { Text(text = "Price") },
+            placeholder = { Text(text = stringResource(R.string.price)) },
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number
             )
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Item status",
+            text = stringResource(R.string.item_status),
             modifier = Modifier
                 .align(Alignment.Start)
                 .padding(start = 16.dp),
@@ -302,7 +306,8 @@ fun AddItemScreen(
                     status = onCheckedChange.value
                 )
                 if (newItems.name.isEmpty() || newItems.description.isEmpty() || newItems.price == null || newItems.image.isEmpty()) {
-                    Toast.makeText(context, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context,
+                        context.getString(R.string.please_fill_all_fields), Toast.LENGTH_SHORT).show()
                     return@Button
                 }
                 if (items == null) {
@@ -316,7 +321,7 @@ fun AddItemScreen(
                 .fillMaxWidth()
                 .padding(16.dp)
         ) {
-            Text(text = if (items == null) "Save" else "Update")
+            Text(text = if (items == null) stringResource(R.string.save) else stringResource(R.string.update))
         }
         Spacer(modifier = Modifier.height(32.dp))
     }

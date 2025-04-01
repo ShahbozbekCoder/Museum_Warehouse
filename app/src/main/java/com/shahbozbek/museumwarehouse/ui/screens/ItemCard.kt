@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -55,7 +56,7 @@ fun ItemCard(
         ) {
             Image(
                 painter = imagePainter,
-                contentDescription = "Item Image",
+                contentDescription = stringResource(R.string.item_image),
                 modifier = Modifier.size(width = 240.dp, height = 180.dp)
             )
             Text(
@@ -67,7 +68,7 @@ fun ItemCard(
                 overflow = TextOverflow.Ellipsis,
             )
             Text(
-                text = if (myItems.status) "Available" else "Not available",
+                text = if (myItems.status) stringResource(R.string.available) else stringResource(R.string.not_available),
                 fontSize = 16.sp,
                 color = if (myItems.status) Color.Green else Color.Red,
                 modifier = Modifier.padding(top = 4.dp, start = 8.dp, end = 8.dp)
@@ -80,7 +81,7 @@ fun ItemCard(
                 overflow = TextOverflow.Ellipsis,
             )
             Text(
-                text = "Price: ${myItems.price}",
+                text = stringResource(R.string.price, myItems.price),
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(top = 4.dp, start = 8.dp, end = 8.dp),
                 maxLines = 1,
@@ -100,7 +101,7 @@ fun ItemScreenPreview() {
             "Item 1",
             "Description 1",
             10.0,
-            (R.drawable.item1).toString(),
+            (R.drawable.not_loaded_img).toString(),
             true
         )
     )

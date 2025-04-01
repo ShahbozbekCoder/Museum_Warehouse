@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aloqa tarixi muzeyi</string>
+    <string name="first_floor">Birinchi qavat</string>
+    <string name="second_floor">Ikkinchi qavat</string>
+    <string name="lower_floor">Pastki qavat</string>
+    <string name="choose_language">Tilni tanlang</string>
+    <string name="museum_warehouse_details">Muzey eksponat detallari</string>
+    <string name="no_items_found">Hech narsa topilmadi</string>
+    <string name="add">Qo\'shish</string>
+    <string name="item_image">Mahsulot rasmi</string>
+    <string name="available">Mavjud</string>
+    <string name="not_available">Mavjud emas</string>
+    <string name="price">Narx</string>
+    <string name="camera_permission_denied">Kameraga ruxsat berilmadi</string>
+    <string name="select_image_source">Rasm manbasini tanlang</string>
+    <string name="choose_the_source_for_the_image">Rasm uchun manbani tanlang</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galereya</string>
+    <string name="item_name">Mahsulot nomi</string>
+    <string name="item_description">Mahsulot ta\'rifi</string>
+    <string name="description">Ta\'rif</string>
+    <string name="item_price">Mahsulit narxi</string>
+    <string name="item_status">Mahsulot statusi</string>
+    <string name="please_fill_all_fields">Iltimos, barcha qatorlarni to\'ldiring</string>
+    <string name="save">Saqlash</string>
+    <string name="update">Yangilash</string>
+    <string name="add_museum_item">Muzey eksponati qo\'shish</string>
+    <string name="edit_museum_item">Muzey eksponatini o\'zgartirish</string>
+    <string name="pochta_aloqasi">Pochta aloqasi</string>
+    <string name="teleminora_maketlari_ekspozitsiyasi">Teleminora maketlari ekspozitsiyasi</string>
+    <string name="grammofon_va_radioqabulqilgichlari_ekspozitsiyasi">Grammofon va radioqabulqilgichlari ekspozitsiyasi</string>
+    <string name="ot_arava_ekspozitsiyasi">Ot-arava ekspozitsiyasi</string>
+    <string name="ot_arava_haqida">Arava, aroba — yuk va odam tashishga moʻljallangan, ulov qoʻshib ishlatiladigan qadimgi transport turi. Arava shoti (ara-vashoti), tegarchik (gʻildirak) va oʻq kabi asosiy qismlardan tuzilgan. Shoti 4,5 m cha uzunlikdagi ikkita otyogʻoch (otliq), 8 ta pogona, ikki soʻloq va aygʻizdan iborat. Otyogʻochlar mirza-terakdan ishlanadi. Shoti (oraligʻi 70 — 80 sm) uchlarida ot boʻyinchasini mahkamlashga xizmat qiladigan bittadan teshiklari boʻladi./nTegarchik (gʻildirak) gupchak, toʻgʻin, kegay, bellik, aravatemir, aravamix va yostiq kabi qismlardan iborat. Aravatemir, aravamixlar temirdan, boshqa qismlar qayragʻochning chayir turi (bujun)dan yasaladi. Oʻq — yoʻgʻonligi 40 sm, 2,5 m uzunlikdagi silliqlangan yogʻoch boʻlib, ikki uchi tegarchik gupchagiga kiritiladi va ustiga aravashoti mindiriladi. Yurganda shoti jilib ketmasligi uchun uning ostiga soʻloq oʻrnatiladi. aravalar ikki, uch va toʻrt gʻildirakli boʻladi. Qoʻshiladigan ulovga koʻra, ot arava, tuya arava, hoʻkiz arava, eshak arava kabi xillari farqda-nadi.</string>
+    <string name="pochta_aloqasi_tarixi">Pochta aloqasi tarixi</string>
+    <string name="pochta_aloqasi_haqida">Pochta aloqasi — transport vositalari yordamida xat, davriy nashrlar, joʻnatma, pul va hokazoni qabul qilib olib joʻnatadigan muassasalar tizimi. Pochta aloqasining yuzaga kelishi bevosita yozuvning paydo boʻlishi bilan bogʻliq. Yunoniston, Eron, Misr, Xitoy va Rim imperiyalarida Pochta aloqasi davlat boshqaruvida alohida ahamiyat kasb etgan va davlat Pochta aloqasi yaxshi yoʻlga qoʻyilgan: joʻnatilgan xat-xabarlar otda va piyoda estafeta tamoyili asosida tashilgan. Hunarmandchilik va savdo-sotiqning rivojlanishi bilan hunarmand va savdogarlarga xizmat qiluvchi shahar pochtalari vujudga keldi. Ular, ayni paytda, aholining boshqa tabaqalariga ham xizmat qildi./n16—17-asrlarda Fransiya, Shvetsiya, Angliya va boshqa mamlakatlarda markazlashgan qirollik pochtalari paydo boʻldi. Pochta aloqasining oʻsishi va davlatlararo iqtisodiy munosabatlarning rivojlanishi bilan Pochta aloqasi ham taraqqiy etdi. Aloqa mar-kalarinit muomalaga kiritilishi Pochta aloqasi tarixida yangi davr boshlab berdi. 1869-yilda Avstriyada pochta kartochkasi joriy etildi. 1874-yilda 22 mamlakat ish-tirokida l-Xalqaro pochta kongressi oʻtkazilib, Umumiy pochta ittifoqini tuzish haqida shartnoma imzolandi (1878-yildan Jahon pochta ittifoqi). Butun dunyoda oʻzaro yozishmalarni va yozma maʼlumotlarni ayirboshlashni muvofiqlashtirish uchun 1978-yilda Ja-hon pochta ittifoqi konvensiyasi qabul qilindi. 19-asrning boshlarida paroxod va parovozlar, 20-asr boshida samolyotlarning yaratilishi pochta joʻnatmalarini yetkazish tezligini keskin oshirdi. Pochta aloqasi xizmatlaridan na-faqat davlat, balki oddiy aholi ham foydalana boshladi. Telegraf (1832), telefon (1876), radio (1895) ning ix-tiro etilishi ham Pochta aloqasining jamiyat hayotida tutgan muhim oʻrnini oʻzgarti-ra olmadi. 20-asrda ham u eng qulay va ommabop aloqa vositasi sifatida saqlanib qoldi.</string>
+    <string name="teleminora_tarixi">Teleminora tarixi</string>
+    <string name="teleminora_haqida">Teleminora – bu tayanch boʻlib, uning ustiga televivizion uzatish stantsiyasining antennalari oʻrnatiladi . Baʼzan „minora“ soʻzi ishlatiladi, lekin u jarangli va hozir bu maʼnoda ishlatilmaydi.Televizion va eshittirish signallarini ishonchli qabul qilish zonasi teleminoradagi uzatish antennalarining balandligiga bogʻliq, shuning uchun ular iloji boricha balandroq qurilgan va yerning eng yuqori nuqtalariga joylashtirilgan. Shuningdek, zona transmitterlarning kuchiga bogʻliq boʻladi, shuning uchun katta televizion markazlar katta miqdorda elektr energiyasini isteʼmol qiladi. Transmissiya kabellarining (oziqlantiruvchi) katta sigʻimi, shuningdek, balandligi va oʻziga xos dizayni tufayli oʻchirish juda qiyin boʻlgan yongʻinlar ehtimolini oshirib yuboradi.</string>
+    <string name="pul_markasi">Pul markasi</string>
+    <string name="pul_markasi_tarixi">Pul – bu shunday maxsus tovarki, u hamma boshqa tovarlar uchun umumiy ekvivalent vazifasini bajaradi. Pul umumiy tovarlarni ayriboshlashda asosiy vazifasini bajaradi. Qadimda pul vazifasini turli xil tovarlar bajargan, masalan, chorva mollari, mol terilari, bolta va hokazo. Keyinchalik pul vazifasini qimmatbaho metallar bajargan, chunki ular oʻzini sifatini yoʻqotmaydi va pul oʻrnini bosishda juda qoʻl kelgan. Pul oddiy mahsulot boʻlib qolmay, u ijtimoiy qiymatga ega, yaʼni hamma tovarlarni xarid etish vositasi boʻlib hizmat qiladi.</string>
+    <string name="grammofon_haqida">Grammofon (yun. gramma — harf, yozuv va phone — tovush) — gramplastinkaga yozilgan tovushni qayta eshittiruvchi apparat. Aylanuvchi gramplastinka arikchasida G. ignasining tebranishlari karnay orkali kuchaytirilayotgan membranaga uzatiladi. G.ning ixcham varianti — patefon. 20-asr 50-yillaridan G. oʻrniga elektrofondyan foydalana boshlandi.</string>
+    <string name="grammofon_tarixi">Grammofon tarixi</string>
+    <string name="radioqabulqilgich_tarixi">Radioqabulqilgich tarixi</string>
+    <string name="radioqabulqilgich_haqida">Radio qabul qilgich (qisqartirilgan nomi - qabul qilgich, ogʻz. - radio) - antennaga ulangan ulangan va radio qabul qilish, ya’ni signallarni radio to’lqindan ajratish uchun ishlatiladigan qurilma.Radio qabul qiluvchi uskuna deganda antenna bilan jihozlangan radio qabul qilgich, shuningdek, qabul qilingan ma’lumotlarni qayta ishlash va kerakli shaklda (vizual, ovozli, bosma matn shaklida va boshqalar) takrorlash vositalari tushuniladi. Koʻp hollarda antenna va takrorlash vositalari tizimli ravishda radio qabul qiluvchining bir qismidir. Radio qabul qilish moslamasi antenna yordamida radio toʻlqinlarini fazoviy va qutblantiruvchi tanlashni va ularni elektr radio signallariga (kuchlanish, oqim) aylantirishni, chastotani oʻzgartirish, qabul qiluvchi antennaning chiqishida harakat qiladigan va foydali signal bilan chastotaga toʻgʻri kelmaydigan boshqa (xalaqit beradigan) signallar va shovqinlar toʻplamidan foydali radio signalni ajratish, kuchaytirish, foydali radio signalni undagi ma’lumotlardan foydalanishga imkon beradigan shaklga oʻtkazishni amalga oshiradi.Rasmiy ravishda, radio qabul qiluvchilar radiostantsiyalarga kiradi, garchi bunday tasnif amalda kamdan-kam uchraydi.</string>
+</resources>

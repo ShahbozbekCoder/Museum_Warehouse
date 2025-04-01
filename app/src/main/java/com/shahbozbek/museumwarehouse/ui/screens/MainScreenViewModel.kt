@@ -6,7 +6,7 @@ import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shahbozbek.museumwarehouse.data.local.Items
-import com.shahbozbek.museumwarehouse.data.repository.RepositoryImpl
+import com.shahbozbek.museumwarehouse.data.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainScreenViewModel @Inject constructor(
-    private val repository: RepositoryImpl
+    private val repository: Repository
 ) : ViewModel() {
 
     private val _items = MutableStateFlow<List<Items>>(emptyList())
@@ -57,4 +57,13 @@ class MainScreenViewModel @Inject constructor(
             _items.value = repository.getAll()
         }
     }
+
+    fun getAppLang(): String {
+        return repository.getLanguage()
+    }
+
+    fun setAppLang(lang: String) {
+        repository.setLanguage(lang)
+    }
+
 }

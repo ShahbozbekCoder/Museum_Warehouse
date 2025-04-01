@@ -12,4 +12,8 @@ interface Repository {
 
     suspend fun insert(item: Items)
 
+    fun getLanguage(): String
+
+    fun setLanguage(language: String)
+
 }
