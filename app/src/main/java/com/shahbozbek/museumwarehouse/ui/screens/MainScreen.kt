@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -19,16 +18,42 @@ import com.shahbozbek.museumwarehouse.R
 fun MainScreen(
     navController: NavController,
     mainScreenViewModel: MainScreenViewModel,
+    floor: Int? = null,
     paddingValues: PaddingValues
 ) {
     LaunchedEffect(Unit) {
         mainScreenViewModel.getAll()
     }
-    val articles = mutableListOf(
+    val articles: MutableList<Articles>
+    val articles1 = mutableListOf(
         Articles(title = stringResource(R.string.pochta_aloqasi)),
         Articles(title = stringResource(R.string.teleminora_maketlari_ekspozitsiyasi)),
         Articles(title = stringResource(R.string.grammofon_va_radioqabulqilgichlari_ekspozitsiyasi))
     )
+    val articles2 = mutableListOf(
+        Articles(title = stringResource(R.string.radioreproduktor)),
+        Articles(title = stringResource(R.string.fanograf)),
+        Articles(title = stringResource(R.string.m_60_kommutatori))
+    )
+    val articles0 = mutableListOf(
+        Articles(title = stringResource(R.string._6n_1_rusumli_lampali_radioqabulqilgich)),
+        Articles(title = stringResource(R.string.elektron_nurli_trubka)),
+        Articles(title = stringResource(R.string.xarf_teruvchi_telegraf_apparati))
+    )
+    articles = when (floor) {
+        0 -> {
+            articles0
+        }
+        1 -> {
+            articles1
+        }
+        2 -> {
+            articles2
+        }
+        else -> {
+            articles1
+        }
+    }
     val itemsList = mainScreenViewModel.items.collectAsState().value
 
     Column(
@@ -42,7 +67,7 @@ fun MainScreen(
                 ArticlesItem(
                     article = articles[index].title,
                     onClick = {
-                        navController.navigate("articles/$index")
+                        navController.navigate("articles/$index/$floor")
                     }
                 )
             }

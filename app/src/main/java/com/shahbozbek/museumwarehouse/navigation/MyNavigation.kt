@@ -32,8 +32,18 @@ fun MyNavigation(
         composable("floor") {
             FloorScreen(navController)
         }
-        composable("main") {
-            MainScreen(navController, hiltViewModel(), paddingValues)
+        composable(
+            route = "main/{floor}",
+            arguments = listOf(navArgument("floor") {
+                type = NavType.IntType
+            })
+        ) {backStackEntry ->
+            val floor = backStackEntry.arguments?.getInt("floor")
+            MainScreen(
+                navController = navController,
+                hiltViewModel(),
+                floor = floor,
+                paddingValues)
         }
         composable(
             route = "add?item={item}",
@@ -47,16 +57,20 @@ fun MyNavigation(
             AddItemScreen(navController, hiltViewModel(), item)
         }
         composable(
-            route = "articles/{index}",
+            route = "articles/{index}/{floor}",
             arguments = listOf(navArgument("index") {
+                type = NavType.IntType
+            },navArgument("floor") {
                 type = NavType.IntType
             })
         ) {backStackEntry ->
             val index = backStackEntry.arguments?.getInt("index")
+            val floor = backStackEntry.arguments?.getInt("floor")
             ArticlesScreen(
                 navController = navController,
                 index = index,
-                paddingValues = paddingValues
+                paddingValues = paddingValues,
+                floor = floor
             )
         }
         composable(

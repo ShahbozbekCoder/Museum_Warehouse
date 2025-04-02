@@ -33,7 +33,8 @@ fun FloorScreen(navController: NavController) {
     ) {
         Button(
             onClick = {
-                navController.navigate("main")
+                val index = 1
+                navController.navigate("main/$index")
             },
             modifier = Modifier
                 .background(Color.White)
@@ -46,7 +47,8 @@ fun FloorScreen(navController: NavController) {
         }
         Button(
             onClick = {
-                navController.navigate("main")
+                val index = 2
+                navController.navigate("main/$index")
             },
             modifier = Modifier
                 .background(Color.White)
@@ -59,7 +61,8 @@ fun FloorScreen(navController: NavController) {
         }
         Button(
             onClick = {
-                navController.navigate("main")
+                val index = 0
+                navController.navigate("main/$index")
             },
             modifier = Modifier
                 .background(Color.White)
