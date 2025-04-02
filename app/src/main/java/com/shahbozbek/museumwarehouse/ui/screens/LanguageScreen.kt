@@ -1,6 +1,7 @@
 package com.shahbozbek.museumwarehouse.ui.screens
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,6 +23,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -43,7 +45,7 @@ fun LanguageScreen(
                 brush = Brush.linearGradient(
                     listOf(
                         if (isSystemInDarkTheme()) Color.LightGray else Color.Cyan,
-                        if (isSystemInDarkTheme())  Color.DarkGray else Color(0xFFFFFFFF)
+                        if (isSystemInDarkTheme()) Color.DarkGray else Color(0xFFFFFFFF)
                     )
                 )
             ),
@@ -131,6 +133,16 @@ fun LanguageScreen(
                 color = Color(0xFF009688)
             )
         }
+        Spacer(modifier = Modifier.height(50.dp))
+        Text(
+            text = stringResource(R.string.muallif_haqida),
+            color = Color.Black,
+            fontSize = 20.sp,
+            modifier = Modifier.clickable {
+                navController.navigate("author")
+            },
+            textDecoration = TextDecoration.Underline
+        )
     }
 }
 

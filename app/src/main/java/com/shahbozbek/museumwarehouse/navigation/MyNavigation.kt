@@ -14,6 +14,7 @@ import com.shahbozbek.museumwarehouse.data.local.Items
 import com.shahbozbek.museumwarehouse.ui.screens.AddItemScreen
 import com.shahbozbek.museumwarehouse.ui.screens.Articles
 import com.shahbozbek.museumwarehouse.ui.screens.ArticlesScreen
+import com.shahbozbek.museumwarehouse.ui.screens.AuthorScreen
 import com.shahbozbek.museumwarehouse.ui.screens.FloorScreen
 import com.shahbozbek.museumwarehouse.ui.screens.LanguageScreen
 import com.shahbozbek.museumwarehouse.ui.screens.MainScreen
@@ -28,6 +29,9 @@ fun MyNavigation(
     NavHost(navController = navController, startDestination = "language") {
         composable("language") {
             LanguageScreen(navController = navController, onLanguageSelected = onLanguageSelected )
+        }
+        composable("author") {
+            AuthorScreen()
         }
         composable("floor") {
             FloorScreen(navController)

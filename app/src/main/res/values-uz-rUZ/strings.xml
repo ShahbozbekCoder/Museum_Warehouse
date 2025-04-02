@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Aloqa tarixi muzeyi</string>
     <string name="first_floor">Birinchi qavat</string>
     <string name="second_floor">Ikkinchi qavat</string>
     <string name="lower_floor">Pastki qavat</string>
@@ -72,4 +71,9 @@
     <string name="xarf_teruvchi_telegraf_apparati_haqida">Telegraf apparati - telegraf aloqa oʻrnatishda elektr qurilma signallarini uzatish va qabul qilish uchun moʻljallangan qurilma. Birinchi elektromagnit Telegraf apparati rus olimi P. L. Shilling tomonidan ixtiro qilingan (1832) va amalda ishlatilgan. Dastlabki elektromagnit apparatlarda xabarlar siniq chiziklar koʻrinishida (qayd qiluvchi Telegraf apparati) yoki nuqtachiziqlar koʻrinishida (qayd qiluvchi Telegraf apparati) yoki nuqta va tirelar orqali (qarang Morze apparati) uzatilgan va yozib olingan. 20-asr oʻrtalarigacha elektromexanik Telegraf apparati ishlatilgan, 70y.lardan boshlab elektronmexanik Telegraf apparatidan foydalanildi, keyinchalik toʻliq elektron Telegraf apparati va fototelegraf apparat (faksimil apparat) paydo boʻldi.</string>
     <string name="raqam_terilmaydigan_telefon_apparati_tarixi">Raqam terilmaydigan telefon apparati tarixi</string>
     <string name="raqam_terilmaydigan_telefon_apparati_haqida">Telefon apparati - abonentlarning gaplashishi uchun moʻljallangan elektrakustik apparata; telefon tarmoqlarinnsh oxirgi abonent qurilmasi. Amalda qoʻllangan birinchi uzatishni qabul qilish qurilmasini 1876-yilda Shotland ixtirochisi A.G.Bell ixtiro qilgan. Keyinchalik turli mamlakatlarning ixtirochi va olimlari uni takomillashtirgan. Telefon apparati gaplashiladigan qism (telefon va mikrofon, bular umumiy korpus, yaʼni trubkaga birlashtiriladi), abonentni chaqiruvchi qism (diskli yoki tugmachali raqam tergich, yaʼni signal qoʻngʻirogʻi) va kommutatsiya qurilmasi (apparatning chaqiruvchi qismini gaplashish kismiga ulaydi)dan iborat. Telefon apparatilarning hammasi mexanoavtomatik rejimda ishlaydi (yaʼni raqam terish mexanik, abonentlarni ulash avtomatik tarzda amalga oshadi). Abonentlarga "oʻzi" javob beradigan, ularning telefon raqamlarini magnit xotiraga qayd qiladigan avtoraqam tergichli avtomat Telefon apparatilar ham mavjud.</string>
+    <string name="muallif_haqida">Muallif haqida</string>
+    <string name="loyiha_haqida_ma_lumotlar">Loyiha haqida ma\'lumotlar</string>
+    <string name="loyiha_nomi">Loyiha nomi:</string>
+    <string name="loyiha_muallifi">Loyiha muallifi:</string>
+    <string name="loyiha_muallifi_rahbari">Loyiha muallifi rahbari:</string>
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Museum warehouse</string>
+    <string name="app_name" translatable="false">Museum App</string>
     <string name="first_floor">First floor</string>
     <string name="second_floor">second floor</string>
     <string name="lower_floor">Lower floor</string>
@@ -71,6 +71,11 @@
     <string name="xarf_teruvchi_telegraf_apparati_haqida">Telegraph apparatus - a device designed to transmit and receive electrical signals in telegraph communication. The first electromagnetic telegraph apparatus was invented by the Russian scientist P. L. Schilling (1832) and was used in practice. In the first electromagnetic apparatus, messages were transmitted and recorded in the form of broken lines (recording telegraph apparatus) or dotted lines (recording telegraph apparatus) or dots and dashes (see Morse apparatus). Until the middle of the 20th century, an electromechanical telegraph apparatus was used, starting from the 70s, an electromechanical telegraph apparatus was used, later a fully electronic telegraph apparatus and a phototelegraph apparatus (facsimile apparatus) appeared.</string>
     <string name="raqam_terilmaydigan_telefon_apparati_tarixi">History of the dial-less telephone</string>
     <string name="raqam_terilmaydigan_telefon_apparati_haqida">A telephone set is an electroacoustic device designed for subscribers to talk; the last subscriber device in telephone networks. The first transmission receiving device used in practice was invented in 1876 by the Scottish inventor A.G. Bell. Later, inventors and scientists from different countries improved it. The telephone set consists of a talking part (a telephone and a microphone, which are combined into a common housing, i.e. a tube), a subscriber calling part (a dialer with a disc or button, i.e. a signal bell) and a switching device (connecting the calling part of the device to the talking part). All telephone sets operate in a mechanoautomatic mode (i.e. dialing is mechanical, and connecting subscribers is carried out automatically). There are also automatic telephone sets with an autodialer that "itself" answers subscribers and records their telephone numbers in magnetic memory.</string>
+    <string name="muallif_haqida">About the author</string>
+    <string name="loyiha_haqida_ma_lumotlar">Project information</string>
+    <string name="loyiha_nomi">Project name:</string>
+    <string name="loyiha_muallifi">Project author:</string>
+    <string name="loyiha_muallifi_rahbari">Project author supervisor:</string>
 
 
 </resources>
