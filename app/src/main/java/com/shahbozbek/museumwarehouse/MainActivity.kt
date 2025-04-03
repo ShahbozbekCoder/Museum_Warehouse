@@ -1,22 +1,24 @@
 package com.shahbozbek.museumwarehouse
 
-import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
 import com.shahbozbek.museumwarehouse.navigation.MyNavigation
-import com.shahbozbek.museumwarehouse.ui.screens.MainScreen
 import com.shahbozbek.museumwarehouse.ui.screens.MainScreenViewModel
 import com.shahbozbek.museumwarehouse.ui.theme.MuseumWarehouseTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -36,18 +38,37 @@ class MainActivity : ComponentActivity() {
 
         enableEdgeToEdge()
         setContent {
+
+            val navController = rememberNavController()
+
+            val navigationState = navController.currentBackStackEntryAsState()
+            val currentRoute = navigationState.value?.destination?.route
+
             MuseumWarehouseTheme {
-                Scaffold (
+                Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = {
                         TopAppBar(
                             title = {
                                 Text(text = stringResource(R.string.museum_warehouse_details))
+                            },
+                            navigationIcon = {
+                                if (currentRoute != "language") IconButton(
+                                    onClick = {
+                                        navController.popBackStack()
+                                    }
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                                        contentDescription = "Menu"
+                                    )
+                                }
                             }
                         )
                     },
                 ) { paddingValues ->
                     MyNavigation(
+                        navController = navController,
                         onLanguageSelected = { lang ->
                             setLocale(lang)
                         },
